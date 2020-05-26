@@ -109,7 +109,7 @@
 #define N2PLUS
 #define DUAL              //Un-comment this line to get dual head version firmware.
 //#define BONDTECH_MINI     //Un-comment this line to get Bondtech Mini extruder firmware (can be combined with DUAL).
-#define BONDTECH_BMG    //Un-comment this line to get Bondtech BMG extruder firmware (can be combined with DUAL).
+//#define BONDTECH_BMG    //Un-comment this line to get Bondtech BMG extruder firmware (can be combined with DUAL).
 
 #define ABH_RUNOUT_SENSOR
 #define ABH_HOTEND
@@ -623,7 +623,7 @@ const bool E1_LACK_ENDSTOP_INVERTING = true; // set to true to invert the logic 
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 5, 25, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 300, 300, 5, 25, 25 } 
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -772,7 +772,7 @@ const bool E1_LACK_ENDSTOP_INVERTING = true; // set to true to invert the logic 
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 44     // X offset: -left  +right  [of the nozzle] /* Raise3D BLTouch */
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 31    // Y offset: -front +behind [the nozzle]    /* Raise3D BLTouch */
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -.25  // Z offset: -below +above  [the nozzle]    /* Raise3D BLTouch */ MIGHT TRY -.30
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -.25  // Z offset: -below +above  [the nozzle]    /* Raise3D BLTouch */ MIGHT TRY -.30 /Can be adjusted in the Gcode
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 10000  /* Raise3D BLTouch */
@@ -1252,7 +1252,7 @@ const bool E1_LACK_ENDSTOP_INVERTING = true; // set to true to invert the logic 
 
 // @section temperature
 
-// Preheat Constants
+// Preheat Constants /* Raise3D Preset can be changed on touch screen/*
 #define PREHEAT_1_TEMP_HOTEND 210
 #define PREHEAT_1_TEMP_BED     40
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255

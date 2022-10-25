@@ -9,7 +9,6 @@ G28 Z0
 M851 Z-0.29 //z-probe offset must come before G29
 G29 
 M420 S1
-M851 Z-0.29
 G1 X0 F8000 Y0 F8000
 G1 Z15.0 F800
 G92 E0
